@@ -133,7 +133,7 @@ def on_ui_tabs():
     else:
         header = "header_off"
     
-    api_key = getattr(opts, "custom_api_key", "")
+    api_key = getattr(opts, "custom_api_key", "090299c7d0b60f02873ba9f4d2891545")
     if api_key:
         toggle4 = "toggle4L_api" if lobe_directory else "toggle4_api"
         show_only_liked = True
