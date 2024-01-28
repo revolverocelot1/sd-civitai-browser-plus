@@ -1101,7 +1101,7 @@ def update_file_info(model_string, model_version, file_metadata):
     )
 
 def get_headers():
-    api_key = getattr(opts, "custom_api_key", "")
+    api_key = getattr(opts, "custom_api_key", "090299c7d0b60f02873ba9f4d2891545")
     try:
         user_agent = UserAgent().chrome
     except ImportError:
