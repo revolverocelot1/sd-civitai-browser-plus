@@ -100,6 +100,57 @@ https://github.com/BlafKing/sd-civitai-browser-plus/assets/9644716/44c5c7a0-4854
 
 # Changelog 📋
 
+<h3>v3.4.1</h3>
+
+* Bug fix: Fixed prompt info and model selection after CivitAI API update.
+* Bug fix: Fixed "/" missing from default path/sub-folder.
+* Feature: Local images now work in HTML files as preview. (credit: [mx](https://github.com/mx))
+* Feature: Updated available base models.
+
+---
+<h3>v3.4.0</h3>
+
+* Feature: (BETA) Download queue! rearrange download order and remove models from queue
+   - Will likely contain bugs, still not completely finished.
+* Feature: Customizable sub folder insertion options, choose what sub folder options you want!
+* New setting: Toggle per prompt example image buttons
+* New setting: Insert sub folder options
+* Bug fix: Add to queue fixed, now properly gets enabled.
+* Bug fix: Symlinks now get correctly recognized and used.
+* Bug fix: No longer creates accidental sub folder when bulk downloading.
+
+---
+<h3>v3.3.1</h3>
+
+* Feature: Ability to send individual parts of image generation data to txt2img.
+* Feature: Added compatibility for [stable-diffusion-webui-forge](https://github.com/lllyasviel/stable-diffusion-webui-forge) fork.
+* New setting: Use local images in the HTML 
+   - Does not work in combination with the "Use local HTML file for model info" option!
+* New setting: Store the HTML and api_info in the custom images location
+* Bug fix: New HTML model info now scales with width so it should always fit.
+* Bug fix: Various bug fixes to the "Update model info & tags" function.
+* Bug fix: Auto save all images now uses correctly uses custom image path if set.
+* Bug fix: "Save model info" button should no longer return errors.
+* Bug fix: Old download method (non Aria2) should now work again.
+
+---
+<h3>v3.3.0</h3>
+
+* Feature: New txt2img and img2img model info overlay on CivitAI button press.
+* Feature: Base Model as sub folder option.
+* Feature: Ability to multi-download to selected folder.
+* Feature: Use the same folder as older versions when updating using multi-download.
+* Feature: txt2img and img2img CivitAI buttons can use local HTML file, toggle in settings.
+* Note: Save images no longer saves .html and API info, save model info does this instead now.
+* New setting: Save API info of model when saving model info.
+* New setting: Automatically save all images after download.
+* New setting: Use local HTML file for model info.
+* Bug fix: better JSON decode, now forces UTF-8
+* Bug fix: Now uses the proper default file when using multi-download
+* Bug fix: Hide early access models fix, now works when published_at does not exist in API.
+* Bug fix: Fix attempt for queue clearing upon download fail.
+
+---
 <h3>v3.2.5</h3>
 
 * Bug fix: Removed default API Key since it gets blocked after many downloads.
